@@ -38,21 +38,19 @@
 		</div>
 		<div class="o-section o-section--gray o-section--md">
 			<div class="u-container">
-				<div class="u-df u-jc-sb u-ai-c" style="transform-style: preserve-3d;transform: perspective(1000px)"
-					>
-					<div class="u-df u-fd-c u-mw-md" style="margin-right:-102px;transform: translateZ(20px)"
-						data-aos="fade-right">
-						<h1 style="transform: translateZ(20px)">
+				<div class="u-df u-jc-sb u-ai-c">
+					<div class="u-df u-fd-c u-mw-md" style="margin-right:-102px;" data-aos="fade-right">
+						<h1>
 							Be creative at<br>
 							any time & moment
 						</h1>
-						<div class="u-mt-xs" style="">
+						<div class="u-mt-xs">
 							<div class="c-button c-button--secondary">
 								Sign up
 							</div>
 						</div>
 					</div>
-					<div class="c-screencast" data-aos="fade-left">
+					<div class="c-screencast" data-aos="fade-left" data-aos-delay="500">
 
 					</div>
 
@@ -274,7 +272,9 @@
 	<script src="./js/vanilla-tilt.min.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
-		AOS.init();
+		AOS.init({
+			delay: 200,
+		});
 	</script>
 
 </body>
