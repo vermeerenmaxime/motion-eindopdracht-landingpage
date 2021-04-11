@@ -66,6 +66,7 @@ p {
           animation: updown 2s infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  cursor: pointer;
 }
 
 .c-slidedown svg {
@@ -134,7 +135,7 @@ p {
 
 .c-link {
   --c-link-color: rgba(0, 0, 0, 0.5);
-  padding: 0.25rem 0;
+  padding: 0.15rem 0;
   display: inline-block;
   color: var(--c-link-color);
   font-weight: bold;
@@ -235,6 +236,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .c-input-switch::before {
@@ -243,7 +245,13 @@ p {
   position: absolute;
   background: #186ffa;
   padding: 0.55rem;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
   margin: 3px;
+}
+
+.c-input-switch:hover::before, .c-input-switch:checked::before, .c-input-switch:active::before, .c-input-switch:focus::before {
+  margin: 3px 3px 3px 27px;
 }
 
 .u-jc-sb {

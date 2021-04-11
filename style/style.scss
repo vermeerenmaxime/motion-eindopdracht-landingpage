@@ -85,6 +85,7 @@ p {
 	}
 	animation: updown 2s infinite;
 	animation-timing-function: ease-in-out;
+	cursor: pointer;
 	@keyframes updown {
 		0% {
 			transform: translateY(50%);
@@ -126,7 +127,7 @@ p {
 
 .c-link {
 	--c-link-color: #{$colorDark};
-	padding: 0.25rem 0;
+	padding: 0.15rem 0;
 	display: inline-block;
 	color: var(--c-link-color);
 	font-weight: bold;
@@ -214,6 +215,7 @@ p {
 	// justify-content:center;
 	display: flex;
 	// align-items: center;
+	cursor: pointer;
 	&::before {
 		content: "";
 		border-radius: 100px;
@@ -221,7 +223,16 @@ p {
 		background: $colorAlpha;
 		padding: 0.55rem;
 
+		transition: 0.2s ease;
 		margin: 3px;
+	}
+	&:hover,
+	&:checked,
+	&:active,
+	&:focus {
+		&::before {
+			margin: 3px 3px 3px 27px;
+		}
 	}
 }
 
