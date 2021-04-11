@@ -8,7 +8,7 @@
     }
     @include font-weight(bold);
     line-height: 16px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-decoration: none !important;
     background-color: color(bg, 1);
     color: color(primary, 1) !important;

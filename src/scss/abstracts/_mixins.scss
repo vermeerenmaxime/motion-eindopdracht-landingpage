@@ -39,7 +39,7 @@
 		}
 	} @else if ($type == 'header') {
 		color: color(typography, 2i);
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		text-decoration: none;
 
 		&:hover,
