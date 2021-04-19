@@ -258,6 +258,33 @@ p {
   margin: 3px 3px 3px 27px;
 }
 
+.c-image-feature {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (max-width: 767px) {
+  .c-image-feature {
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+  }
+}
+
+.c-image-feature img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .c-image-feature img {
+    width: 75%;
+  }
+}
+
 .u-jc-sb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

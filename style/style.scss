@@ -237,6 +237,24 @@ p {
 	}
 }
 
+.c-image-feature {
+	// width: 50%;
+	display: grid;
+	box-sizing: border-box;
+	grid-template-columns: 1fr;
+
+	@include phone {
+		grid-template-columns: 2fr;
+	}
+	img {
+		width: 50%;
+		@include phone {
+			width: 75%;
+		}
+		margin:0 auto;
+	}
+}
+
 .o-row {
 }
 
