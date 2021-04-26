@@ -285,6 +285,50 @@ p {
   }
 }
 
+.c-card {
+  background: white;
+  width: 40%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 2px 4rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 4rem rgba(0, 0, 0, 0.05);
+  height: auto;
+}
+
+.c-card .c-card__price {
+  border-radius: 1rem 1rem 0 0;
+  font-size: 2.5rem;
+  padding: 3rem 3.5rem;
+  background: #186ffa;
+  background: linear-gradient(165deg, #186ffa 0%, #17385e 100%);
+  color: white;
+  font-weight: bold;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+.c-card .c-card__features {
+  padding: 2rem 2.5rem;
+}
+
+.c-card .c-card__features b {
+  padding: 1rem 0;
+}
+
+.c-card .c-card__features .c-card__features-feature {
+  font-size: 0.875rem;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.c-card .c-card__features .c-card__features-feature.add {
+  color: #186ffa;
+}
+
+.c-card .c-card__features span {
+  font-size: 0.75rem;
+}
+
 .u-jc-sb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

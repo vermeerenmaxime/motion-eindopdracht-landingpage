@@ -251,7 +251,48 @@ p {
 		@include phone {
 			width: 75%;
 		}
-		margin:0 auto;
+		margin: 0 auto;
+	}
+}
+
+.c-card {
+	background: white;
+	// display: flex;
+	width: 40%;
+	box-sizing: border-box;
+	border-radius: 1rem;
+	box-shadow: 0 2px 4rem $colorGrayish;
+	height: auto;
+	.c-card__price {
+		border-radius: 1rem 1rem 0 0;
+		font-size: 2.5rem;
+		padding: 3rem 3.5rem;
+		background: $colorAlpha;
+		background: linear-gradient(
+			165deg,
+			$colorAlpha 0%,
+			rgb(23, 56, 94) 100%
+		);
+		color: white;
+		font-weight: bold;
+		border-bottom: 3px solid $colorDark;
+	}
+
+	.c-card__features {
+		padding: 2rem 2.5rem;
+		b {
+			padding: 1rem 0;
+		}
+		.c-card__features-feature {
+			font-size: 0.875rem;
+			transform: translateX(-10px);
+			&.add {
+				color: $colorAlpha;
+			}
+		}
+		span {
+			font-size: 0.75rem;
+		}
 	}
 }
 
