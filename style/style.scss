@@ -161,11 +161,22 @@ p {
 }
 
 .c-screencast {
-	height: 425px;
-	background: $colorGrayish;
-	width: 100%;
-	// position:absolute;
-	border-radius: 1rem;
+	&-title {
+		text-shadow: 0 0 0px 2px white;
+	}
+
+	&-video {
+		height: auto;
+		background: $colorGrayish;
+		width: 100%;
+		// padding:-3px;m
+		box-sizing: border-box;
+		box-shadow: inset 0 0 0 5px white;
+		// position:absolute;
+		border-radius: 1rem;
+		overflow: hidden;
+		transform-style: preserve-3d;
+	}
 }
 
 .u-container {
@@ -177,6 +188,7 @@ p {
 .o-section {
 	padding-left: 2rem;
 	padding-right: 2rem;
+	backface-visibility: hidden;
 
 	&.o-section--gray {
 		background: $colorGrayish;
