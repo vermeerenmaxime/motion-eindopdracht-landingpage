@@ -63,6 +63,11 @@ p {
   font-size: 0.875rem;
 }
 
+#screencastTitle, #screencastVideo {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
 .c-slidedown {
   font-family: Helvetica, sans-serif;
   font-weight: bold;
@@ -183,7 +188,7 @@ p {
 }
 
 .c-screencast-title {
-  text-shadow: 0 0 0px 2px white;
+  mix-blend-mode: darken;
 }
 
 .c-screencast-video {
@@ -198,6 +203,7 @@ p {
   overflow: hidden;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  cursor: pointer;
 }
 
 .u-container {

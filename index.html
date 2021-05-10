@@ -17,6 +17,7 @@
 
 
 	<title>Splice :: Landingpage</title>
+
 </head>
 
 <body>
@@ -42,10 +43,10 @@
 			<div class="u-container">
 				<div class="u-df u-jc-sb u-ai-c u-fd-rr c-screencast">
 
-					<video class="c-screencast-video" data-aos="fade-left" data-aos-delay="500"
+					<video class="c-screencast-video" data-aos="fade-left" data-aos-delay="500" id="screencastVideo"
 						src="./src/video/screencast.mp4" controls></video>
 					<div class="u-df u-fd-c u-mw-md c-screencast-title" style="margin-right:-102px;"
-						data-aos="fade-right">
+						id="screencastTitle" data-aos="fade-right">
 						<h1>
 							Be creative at<br>
 							any time & moment
@@ -385,6 +386,17 @@
 		AOS.init({
 			delay: 200,
 			once: true,
+		});
+		document.getElementById("screencastVideo").addEventListener('mouseover', () => {
+			console.log("hi")
+			document.getElementById("screencastTitle").style.opacity = "0"
+			// document.getElementById("screencastVideo").style.width = "100%"
+			document.getElementById("screencastTitle").style.marginLeft = "-50%"
+		});
+		document.getElementById("screencastVideo").addEventListener('mouseout', () => {
+			console.log("hi")
+			document.getElementById("screencastTitle").style.opacity = "1"
+			document.getElementById("screencastTitle").style.marginLeft = "0"
 		});
 	</script>
 
