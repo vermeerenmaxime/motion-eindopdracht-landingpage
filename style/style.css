@@ -11,6 +11,7 @@ html {
   font-family: "Montserrat", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .c-header {
@@ -64,8 +65,8 @@ p {
 }
 
 #screencastTitle, #screencastVideo {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .c-slidedown {
